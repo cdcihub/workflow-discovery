@@ -9,3 +9,5 @@ This approach separates:
 * workflow **execution** (computing)
 
 Reasoning engine is itself a process (workflow) which takes as an input some KG state, and produces new triples (which can be inserted back in the KG).
+
+**Executing, computing the workflow is also a reasoning action**, deriving equivalence between the given workflow and a trivial worklow which implements to request to data store.
