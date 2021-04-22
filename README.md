@@ -2,15 +2,16 @@
 
 ## Purpose of this note
 
-We want to demostrate on contrete and scientifically-useful working examples how an astronomer with relatively little interest can leverage .
+We want to demostrate on contrete and scientifically-useful working examples how an astronomer, who might indeed have relatively little interest to look in the code, can leverage ODA Knowledge Base together with other valuable resources (especially Renku) to collaborate on workflows and build web-based data analysis, ready for consumption by our robots:
 
 ## Developing the workflow
 
 ### Ontology
 
-For our purposes, we need to 
 
 ### Workflow inputs
+
+For our purposes, the most important relation
 
 ```python
 name_input = "Mrk 421" # name of the object; if empty coordinates are used http://odahub.io/ontology/sources/mrk421
