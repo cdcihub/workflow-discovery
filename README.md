@@ -116,13 +116,13 @@ This graph can be viewed, for example, with [WebVOWL](www.visualdataweb.de/webvo
 *TODO: show command to publish*
 
 
-## Workflow properties from capturing workflow behavior
+### Workflow properties from capturing workflow behavior
 
 Renku (with a renku plugin) is currently able to deduce that workflow uses some algorithms, providing basis for useful automatic annotation. Current plugin is dedicated to ML algorithms.
 
 We expect in the future to make an ODA-specific (or, more generally, astrquery-specific) renku plugin.
 
-## Other Domain-specific knowledge
+### Other Domain-specific knowledge
 
 It is possible to assign any other characteristics to the workflow. It should be seem in case what makes sense. We used `oda:importantIn` predicate to assign relevance to some domains, e.g. `domain:transients`. In many cases these predicates can be assigned based on reasoning rules.
 
@@ -131,7 +131,7 @@ It is possible to assign any other characteristics to the workflow. It should be
 
 We made a simple tool to present an HTTP service executing given notebook on demand. See https://github.com/oda-hub/nb2workflow
 
-# Reasoning workflows
+## Reasoning workflows
 
 **Reasoning is transformation of knowledge.**
 
@@ -145,22 +145,31 @@ Ingesting data into the graph also transforms the graph. Moreoever, workflows in
 
 Reasoning is performed by executing these reasoning workflows: in response to external triggers, or just regularly.
 
-## Literature parsing
-
-https://github.com/oda-hub/literature-to-facts
-
-## Literature building
-
-https://github.com/oda-hub/linked-data-latex
-
-
-## Workflow exection
+### Workflow exection
 
 Curiusly, it is very convenient to see worklow execution as reasoning. See [more details](reasoning-engine.md).
 
-## Other reasoning rules
+### Other reasoning rules
 
 Various standard reasoning rules can be applied.
+
+## Literature
+
+### Literature parsing
+
+Simple workflows to read astronomical and arxiv publications and produce some RDF.
+
+https://github.com/oda-hub/literature-to-facts
+
+### Literature building
+
+Integrating data into paper. Adding another compile step deriving data from various sources (a lot of the time - workflow executions) and producing macroses for the latex.
+
+Made use-case first, for the easist possible latex work.
+
+
+https://github.com/oda-hub/linked-data-latex
+
 
 # Capturing human intervention into the KG
 
@@ -181,6 +190,8 @@ As described in the [details on reasoning engine](reasoning-engine.md) computed 
 
 it should be as simple as pushinga button. They could be synchronized from **Renku**.
 If **Renku** will provide simple a limited public graph, we could directly use it, without reproducing it part of it in ODA KG.
+
+## Example of adding new workflow  which reacts on astro transients
 
 
 
