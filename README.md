@@ -1,5 +1,9 @@
 # Workflow Publishing and Discovery with KG: Old-School Astronomer Guide
 
+|||
+| :-- | :-- |
+| Latest-Version | https://github.com/oda-hub/workflow-discovery/, also deployed as https://odahub.io/ |
+
 ## Purpose of this note
 
 We want to demostrate on concrete and scientifically-useful working examples how an **astronomer**, who might indeed have relatively little interest to look in the code, can leverage **ODA Knowledge Base** and **Knowledge Graphs** together with other valuable resources (especially [Renku](renkulab.io/)):
@@ -33,6 +37,7 @@ PREFIX odaSources: <https://odahub.io/ontology/sources#>
 (see some default list of prefixes [here](http://ontology.odahub.io/defaults/defaults.yaml))
 
 This way, https://odahub.io/ontology/sources/Mrk421 becomes `odaSources:Mrk421`.
+
 
 It is necessary to annotate the workflow with these **terms**. Specifically, to make relations between the **workflow** and these **terms**. Relations have a form of simply propositions, expressed as **subject-predicate-object** **triples**.
 
