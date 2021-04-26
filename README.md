@@ -2,7 +2,7 @@
 
 ## Purpose of this note
 
-We want to demostrate on concrete and scientifically-useful working examples how an **astronomer**, who might indeed have relatively little interest to look in the code, can leverage **ODA Knowledge Base** and **Knowledge Graphs** together with other valuable resources (especially [Renku](renkulab.io/)):
+We want to demostrate on concrete and scientifically-useful working examples how an **astronomer**, who might indeed have relatively little interest to look in the code, can leverage **ODA Knowledge Base** and **Knowledge Graphs** together with other valuable resources (especially [Renku](https://renkulab.io/)):
 * **collaborate** on workflows
 * **discover and use ODA-built services**
 * discovery and use our record of globally available **web-based data analysis services**
@@ -22,7 +22,7 @@ These features are powered by an **RDF Knowledge Graph**. What exactly is stored
 
 ## Ontology
 
-We will describe here the simplest elements of the ontology, which are necessary for workflow annotation.
+We will describe here the simplest elements of the ontology, which are necessary for workflow annotation. We will **not** go into details about how to define various constrains and relations on/between things here.
 
 **Ontology** describes relations between some **things**, **terms** (represented as [RDF URIs](https://www.w3.org/TR/rdf11-concepts/#dfn-iri)). **URI** can look like a URL, e.g. https://odahub.io/ontology/sources/Mrk421 (the URL may or may not be leading to a real location, although it generally should). The **URI** can be also shortened, assuming a namespace prefix:
 
@@ -171,7 +171,7 @@ Made use-case first, for the easist possible latex work.
 https://github.com/oda-hub/linked-data-latex
 
 
-# Capturing human intervention into the KG
+## Human interventions into the KG
 
 Human agents are first-class citizens in the ODA KB/KB, on paar with the automated workflows. Humans are not very reproducible, but provide unique intuitively-guided inputs, owing to their own built-in very large but a bit vague Knowledge "Graphs".
 Key aspect of our development here is to allow data and workflow interoperability. It is only natural that we are concerned with human-ODA unteroperability. Technically, we implement **human interactions are implemented in the same way workflow executions**.
@@ -182,16 +182,19 @@ Some pre-built frontends for develoment needs are presented here:
 
 https://in.odahub.io/odatests/
 
-## Viewing computed workflows
+### Viewing computed workflows
 
 As described in the [details on reasoning engine](reasoning-engine.md) computed workflows are fully curryied workflows are equivalent to simple data-fetching workflows.
 
-## Adding a workflow
+### Adding a workflow
 
-it should be as simple as pushinga button. They could be synchronized from **Renku**.
+
+it should be as simple as pushing a button. They could be synchronized from **Renku**.
 If **Renku** will provide simple a limited public graph, we could directly use it, without reproducing it part of it in ODA KG.
 
-## Example of adding new workflow  which reacts on astro transients
+### Example of adding new workflow  which reacts on astro transients
+
+TODO
 
 
 
